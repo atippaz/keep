@@ -9,7 +9,7 @@ export default defineConfig(({ mode }) => {
     plugins: [vue()],
     build: {
       // the built files will be added here
-      outDir: './../public/app',
+      outDir: './public/app',
     },
     base: isDevelopment ? '/' : '/app/',
     resolve: {
