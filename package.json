@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@rollup/plugin-alias": "^5.1.0",
     "apexcharts": "^3.49.1",
     "big.js": "^6.2.1",
     "vue-router": "^4.3.2",
