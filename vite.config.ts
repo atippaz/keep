@@ -2,7 +2,6 @@ import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import { resolve } from 'path'
 import alias from '@rollup/plugin-alias'
-const projectRootDir = resolve(__dirname)
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => {
   // const isDevelopment = mode === 'development'
@@ -12,7 +11,8 @@ export default defineConfig(({ mode }) => {
     // base: isDevelopment ? '/' : '/app/',
     resolve: {
       alias: {
-        '@': resolve(projectRootDir, 'src'),
+        '@': resolve(__dirname, 'src'),
+        '@/router': resolve(__dirname, 'src/router'),
       },
       extensions: ['.js', '.json', '.jsx', '.mjs', '.ts', '.tsx', '.vue'],
     },
