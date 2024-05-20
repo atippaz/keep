@@ -13,6 +13,7 @@ export default defineConfig(({ mode }) => {
       alias: {
         '@': resolve(__dirname, 'src'),
         '@/router': resolve(__dirname, 'src/router'),
+        '@/layouts': resolve(__dirname, 'src/layouts'),
       },
       extensions: ['.js', '.json', '.jsx', '.mjs', '.ts', '.tsx', '.vue'],
     },
