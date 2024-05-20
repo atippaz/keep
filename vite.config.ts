@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
-import { fileURLToPath, URL } from 'node:url'
-
+import { resolve } from 'path'
+const projectRootDir = resolve(__dirname)
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => {
   // const isDevelopment = mode === 'development'
@@ -11,7 +11,7 @@ export default defineConfig(({ mode }) => {
     // base: isDevelopment ? '/' : '/app/',
     resolve: {
       alias: {
-        '@': fileURLToPath(new URL('./src', import.meta.url)),
+        '@': resolve(projectRootDir, 'src'),
       },
       extensions: ['.js', '.json', '.jsx', '.mjs', '.ts', '.tsx', '.vue'],
     },
