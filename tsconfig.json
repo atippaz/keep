@@ -14,7 +14,7 @@
     "jsx": "preserve",
     "baseUrl": ".",
     "paths": {
-      "@/*": ["src/*"],
+      "@/*": ["/src/*"],
       "vue3-apexcharts": ["src/types/vue3-apexcharts.d.ts"]
     },
     /* Linting */
