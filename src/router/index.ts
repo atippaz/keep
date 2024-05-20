@@ -12,8 +12,26 @@ export const routerMenu = {
 const routes: RouteRecordRaw[] = [
   {
     path: '/',
-    component: () => import('@/layouts/defaultLayout.vue'),
+    component: () => import('@/layouts/DefaultLayout.vue'),
     children: [{ path: '/', component: () => import('@/pages/index.vue') }],
+  },
+  {
+    path: '/',
+    component: () => import('@/layouts/SecondPageLatout.vue'),
+    children: [
+      {
+        path: '/planing',
+        component: () => import('@/pages/PlaningPage.vue'),
+      },
+      {
+        path: '/currency',
+        component: () => import('@/pages/CurrencyPage.vue'),
+      },
+    ],
+  },
+  {
+    path: '/:catchAll(.*)',
+    redirect: '/',
   },
 ]
 

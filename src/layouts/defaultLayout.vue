@@ -1,7 +1,7 @@
 <template>
   <div class="min-h-screen flex flex-col">
     <Navbar />
-    <div class="flex-grow">
+    <div class="flex-grow bg-slate-50">
       <router-view />
     </div>
     <Bottombar />
