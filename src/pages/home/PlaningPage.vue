@@ -3,13 +3,13 @@
     <div class="w-full p-8">
       amarica -> [etf,mutualfund,stock,dr,drx] -> [jepq,]
       <div class="mb-2">พอร์ตเป้าหมาย</div>
-      <div class="bg-white rounded-lg">
+      <div class="bg-white rounded-lg drop-shadow-md">
         <apexchart :options="chartOptions" :series="series" />
       </div>
     </div>
     <div class="w-full p-8">
       <div class="mb-2">พอร์ตปัจจุบัน</div>
-      <div class="bg-white rounded-lg">
+      <div class="bg-white rounded-lg drop-shadow-md">
         <apexchart
           :options="chartOptions"
           :series="currentData.series"

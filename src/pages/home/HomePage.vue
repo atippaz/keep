@@ -49,24 +49,31 @@
         <div>1000 thb</div>
       </div>
     </div>
-    <div class="w-full mt-4">
-      <div class="mb-2 px-6 text-base">DCA List</div>
-      <div class="bg-white rounded-lg drop-shadow-md">
-        <div v-for="i in 3" class="p-4 flex justify-between">
-          <div>abbv</div>
-          <div>
-            {{ i }}
-          </div>
+    <div class="w-full mt-4 p-6 h-full bg-white rounded-lg drop-shadow-md">
+      <div class="mb-2 text-base flex justify-between">
+        <div>DCA List</div>
+        <div @click="router.push({ name: 'DCA' })">
+          <nextIcon></nextIcon>
+        </div>
+      </div>
+
+      <div v-for="i in 3" class="py-4 flex justify-between">
+        <div>abbv</div>
+        <div>
+          {{ i }}
         </div>
       </div>
     </div>
 
-    <div @click="openDime" class="text-base">dime!</div>
-    <div @click="openDime1" class="text-base">dime!</div>
+    <!-- <div @click="openDime" class="text-base">dime!</div>
+    <div @click="openDime1" class="text-base">dime!</div> -->
   </div>
 </template>
 <script lang="ts" setup>
 import { ref } from 'vue'
+import { useRouter } from 'vue-router'
+import nextIcon from '@/assets/icons/next.vue'
+const router = useRouter()
 const chartOptions = ref({
   chart: {
     type: 'donut',
@@ -86,17 +93,17 @@ const isOpen = ref(false)
 function toggleDropdown() {
   isOpen.value = !isOpen.value
 }
-function openDime() {
-  const url =
-    'https://www.facebook.com/groups/4087025951521595/?ref=share&mibextid=NSMWBT'
-  window.location.replace(url)
-  // window.location.href =
-  //   'https://play.google.com/store/apps/details?id=com.dimekkp.dimeapp'
-}
-function openDime1() {
-  const url = 'intent://open#Intent;scheme=dime;package=com.dimekkp.dimeapp;end'
-  window.location.href = url
-}
+// function openDime() {
+//   const url =
+//     'https://www.facebook.com/groups/4087025951521595/?ref=share&mibextid=NSMWBT'
+//   window.location.replace(url)
+//   // window.location.href =
+//   //   'https://play.google.com/store/apps/details?id=com.dimekkp.dimeapp'
+// }
+// function openDime1() {
+//   const url = 'intent://open#Intent;scheme=dime;package=com.dimekkp.dimeapp;end'
+//   window.location.href = url
+// }
 </script>
 <style scoped>
 .three_dot::after {

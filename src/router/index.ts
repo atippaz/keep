@@ -1,7 +1,7 @@
 /**
  * router/index.ts
  *
- * Automatic routes for `./src/pages/*.vue`
+ * Automatic routes for `./src/pages/home/*.vue`
  */
 
 // Composables
@@ -12,8 +12,15 @@ export const routerMenu = {
 const routes: RouteRecordRaw[] = [
   {
     path: '/',
+
     component: () => import('@/layouts/DefaultLayout.vue'),
-    children: [{ path: '/', component: () => import('@/pages/index.vue') }],
+    children: [
+      {
+        path: '/',
+        name: 'Home',
+        component: () => import('@/pages/home/index.vue'),
+      },
+    ],
   },
   {
     path: '/',
@@ -21,15 +28,23 @@ const routes: RouteRecordRaw[] = [
     children: [
       {
         path: '/planing',
-        component: () => import('@/pages/PlaningPage.vue'),
+        name: 'Planing',
+        component: () => import('@/pages/home/PlaningPage.vue'),
       },
       {
         path: '/investion',
-        component: () => import('@/pages/PlaningPage.vue'),
+        name: 'Investion',
+        component: () => import('@/pages/home/PlaningPage.vue'),
       },
       {
         path: '/currency',
-        component: () => import('@/pages/CurrencyPage.vue'),
+        name: 'Currency',
+        component: () => import('@/pages/home/CurrencyPage.vue'),
+      },
+      {
+        path: '/dca',
+        name: 'Dca',
+        component: () => import('@/pages/home/CurrencyPage.vue'),
       },
     ],
   },

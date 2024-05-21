@@ -1,6 +1,6 @@
 <template>
   <nav
-    class="bg-white border-b border-gray-200 px-4 py-2 justify-between items-center hidden lg:flex"
+    class="bg-white border-b border-gray-200 px-4 py-2 justify-between items-center hidden lg:flex drop-shadow-md"
   >
     <div class="flex">
       <button @click="toggleMenu">
@@ -56,10 +56,10 @@
       </button>
     </div>
     <div class="flex flex-col space-y-4 px-4 py-2">
-      <a href="home">Home</a>
-      <a href="investion">investion</a>
-      <a href="currency">Currency</a>
-      <a href="planing">Planing</a>
+      <a href="?menuId=home">Home</a>
+      <a href="?menuId=investion">investion</a>
+      <a href="?menuId=currency">Currency</a>
+      <a href="?menuId=planing">Planing</a>
     </div>
   </div>
 </template>
