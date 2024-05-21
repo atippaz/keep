@@ -42,14 +42,14 @@
         <apexchart :options="chartOptions" :series="series" />
       </div>
     </div>
-    <div class="w-full px-6 mt-6">
+    <div class="w-full px-6 mt-4">
       <div class="mb-2 text-base">เงินสด</div>
       <div class="bg-black p-8 rounded-lg text-white drop-shadow-md">
         <div>สินค้า</div>
         <div>1000 thb</div>
       </div>
     </div>
-    <div class="w-full mt-6">
+    <div class="w-full mt-4">
       <div class="mb-2 px-6 text-base">DCA List</div>
       <div class="bg-white rounded-lg drop-shadow-md">
         <div v-for="i in 3" class="p-4 flex justify-between">
