@@ -35,8 +35,13 @@
         </div>
       </div>
     </div>
-
     <div class="w-full px-6">
+      <div class="mb-2">quote today</div>
+      <div class="rounded-lg bg-white drop-shadow-md p-6">
+        <div>เเดงซื้อขายเขียว</div>
+      </div>
+    </div>
+    <div class="w-full px-6 mt-4">
       <div class="mb-2 text-base">พอร์ตปัจจุบัน</div>
       <div class="bg-white rounded-lg drop-shadow-md">
         <apexchart :options="chartOptions" :series="series" />
