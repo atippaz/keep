@@ -60,9 +60,7 @@
         </div>
       </div>
     </div>
-    <a href="https://play.google.com/store/apps/details?id=com.dimekkp.dimeapp"
-      >dime!</a
-    >
+    <div @click="openDime">dime!</div>
   </div>
 </template>
 <script lang="ts" setup>
@@ -85,6 +83,10 @@ const series = ref([44, 55, 41])
 const isOpen = ref(false)
 function toggleDropdown() {
   isOpen.value = !isOpen.value
+}
+function openDime() {
+  window.location.href =
+    'https://play.google.com/store/apps/details?id=com.dimekkp.dimeapp'
 }
 </script>
 <style scoped>
