@@ -85,7 +85,8 @@ function toggleDropdown() {
   isOpen.value = !isOpen.value
 }
 function openDime() {
-  window.location.assign('dime://open.me/')
+  const url = 'intent://open#Intent;scheme=dime;package=com.dimekkp.dimeapp;end'
+  window.location.replace(url)
   // window.location.href =
   //   'https://play.google.com/store/apps/details?id=com.dimekkp.dimeapp'
 }
