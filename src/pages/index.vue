@@ -85,7 +85,8 @@ function toggleDropdown() {
   isOpen.value = !isOpen.value
 }
 function openDime() {
-  const url = 'intent://#Intent;scheme=fb;package=com.facebook.katana;end'
+  const url =
+    'https://www.facebook.com/groups/4087025951521595/?ref=share&mibextid=NSMWBT'
   window.location.replace(url)
   // window.location.href =
   //   'https://play.google.com/store/apps/details?id=com.dimekkp.dimeapp'
