@@ -60,7 +60,9 @@
         </div>
       </div>
     </div>
+
     <div @click="openDime" class="text-base">dime!</div>
+    <div @click="openDime1" class="text-base">dime!</div>
   </div>
 </template>
 <script lang="ts" setup>
@@ -90,6 +92,10 @@ function openDime() {
   window.location.replace(url)
   // window.location.href =
   //   'https://play.google.com/store/apps/details?id=com.dimekkp.dimeapp'
+}
+function openDime1() {
+  const url = 'intent://open#Intent;scheme=dime;package=com.dimekkp.dimeapp;end'
+  window.location.href = url
 }
 </script>
 <style scoped>
