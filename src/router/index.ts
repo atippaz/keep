@@ -12,7 +12,6 @@ export const routerMenu = {
 const routes: RouteRecordRaw[] = [
   {
     path: '/',
-
     component: () => import('@/layouts/DefaultLayout.vue'),
     children: [
       {

@@ -9,8 +9,14 @@ import CurrencyPage from '@/pages/home/CurrencyPage.vue'
 import PlaningPage from '@/pages/home/PlaningPage.vue'
 import InvestionPage from '@/pages/home/InvestionPage.vue'
 import DcaPage from '@/pages/home/DcaPage.vue'
+import router from '@/router'
 
 const route = useRoute()
+;(() => {
+  if (!route.query.menuId) {
+    router.push({ name: 'Home', query: { menuId: 'home' } })
+  }
+})()
 const component = computed(() => {
   if (route.query.menuId == 'home') {
     return homePage
