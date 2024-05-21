@@ -121,7 +121,7 @@ function handleDataPointSelection(event: any, chartContext: any, config: any) {
 
   // chartContext: บอกข้อมูลของชาร์ทที่ถูกคลิก
   // config: ข้อมูลของจุดที่ถูกคลิก
-  const nweitem = data.value.find((x, y) => y === config.dataPointIndex)
+  const nweitem = data.value.find((_, y) => y === config.dataPointIndex)
   if (nweitem != undefined && !!nweitem.subData) {
     currentData.value.labels = nweitem.subData!.map((x) => x.label)
     currentData.value.series = nweitem.subData!.map((x) => x.serie)
