@@ -1,6 +1,7 @@
 <template>
   <div class="inline-grid lg:grid-cols-3 gap-2 w-full font-bold">
     <div class="w-full p-8">
+      amarica -> [etf,mutualfund,stock,dr,drx] -> [jepq,]
       <div class="mb-2">พอร์ตเป้าหมาย</div>
       <div class="bg-white rounded-lg">
         <apexchart :options="chartOptions" :series="series" />
