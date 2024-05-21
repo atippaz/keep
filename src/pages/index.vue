@@ -49,8 +49,8 @@
         <div>1000 thb</div>
       </div>
     </div>
-    <div class="w-full p-6">
-      <div class="mb-2">DCA List</div>
+    <div class="w-full">
+      <div class="mb-2 px-6">DCA List</div>
       <div class="bg-white rounded-lg drop-shadow-md">
         <div v-for="i in 3" class="p-4 flex justify-between">
           <div>abbv</div>
@@ -60,6 +60,9 @@
         </div>
       </div>
     </div>
+    <a href="https://play.google.com/store/apps/details?id=com.dimekkp.dimeapp"
+      >dime!</a
+    >
   </div>
 </template>
 <script lang="ts" setup>
