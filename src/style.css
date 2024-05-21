@@ -5,4 +5,5 @@ html,
 body,
 #app {
   height: 100vh;
+  font-size: 8px;
 }

@@ -1,7 +1,7 @@
 <template>
   <div class="inline-grid lg:grid-cols-3 gap-2 w-full font-bold">
     <div class="w-full p-6 flex justify-between items-center">
-      <div class="rounded-full bg-slate-400 w-[50px] h-[50px]"></div>
+      <div class="rounded-full bg-slate-400 w-[40px] h-[40px]"></div>
       <div class="relative inline-block text-left">
         <div @click="toggleDropdown" class="three_dot"></div>
 
@@ -18,14 +18,14 @@
           >
             <a
               href="#"
-              class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+              class="block px-4 py-2 text-base text-gray-700 hover:bg-gray-100"
               role="menuitem"
               >Account settings</a
             >
             <form method="POST" action="#">
               <button
                 type="submit"
-                class="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                class="block w-full text-left px-4 py-2 text-base text-gray-700 hover:bg-gray-100"
                 role="menuitem"
               >
                 Sign out
@@ -36,21 +36,21 @@
       </div>
     </div>
 
-    <div class="w-full p-6">
-      <div class="mb-2">พอร์ตปัจจุบัน</div>
+    <div class="w-full px-6">
+      <div class="mb-2 text-base">พอร์ตปัจจุบัน</div>
       <div class="bg-white rounded-lg drop-shadow-md">
         <apexchart :options="chartOptions" :series="series" />
       </div>
     </div>
-    <div class="w-full px-6">
-      <div class="mb-2">เงินสด</div>
+    <div class="w-full px-6 mt-6">
+      <div class="mb-2 text-base">เงินสด</div>
       <div class="bg-black p-8 rounded-lg text-white drop-shadow-md">
         <div>สินค้า</div>
         <div>1000 thb</div>
       </div>
     </div>
-    <div class="w-full">
-      <div class="mb-2 px-6">DCA List</div>
+    <div class="w-full mt-6">
+      <div class="mb-2 px-6 text-base">DCA List</div>
       <div class="bg-white rounded-lg drop-shadow-md">
         <div v-for="i in 3" class="p-4 flex justify-between">
           <div>abbv</div>
@@ -60,7 +60,7 @@
         </div>
       </div>
     </div>
-    <div @click="openDime">dime!</div>
+    <div @click="openDime" class="text-base">dime!</div>
   </div>
 </template>
 <script lang="ts" setup>
