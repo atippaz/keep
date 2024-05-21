@@ -19,14 +19,15 @@
           ></path>
         </svg>
       </button>
-      <div class="text-lg font-semibold ml-2">MyApp</div>
+      <div class="text-lg font-semibold ml-2">keep</div>
     </div>
 
-    <div class="flex space-x-4">
-      <a href="#" class="text-gray-700">Home</a>
-      <a href="#" class="text-gray-700">About</a>
-      <a href="#" class="text-gray-700">Contact</a>
-    </div>
+    <!-- <div class="flex space-x-4">
+      <a href="home">Home</a>
+      <a href="investion">investion</a>
+      <a href="currency">Currency</a>
+      <a href="planing">Planing</a>
+    </div> -->
   </nav>
 
   <div
@@ -55,9 +56,10 @@
       </button>
     </div>
     <div class="flex flex-col space-y-4 px-4 py-2">
-      <a href="#" class="text-gray-700">Home</a>
-      <a href="#" class="text-gray-700">About</a>
-      <a href="#" class="text-gray-700">Contact</a>
+      <a href="home">Home</a>
+      <a href="investion">investion</a>
+      <a href="currency">Currency</a>
+      <a href="planing">Planing</a>
     </div>
   </div>
 </template>

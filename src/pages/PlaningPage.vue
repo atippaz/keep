@@ -10,7 +10,6 @@
     <div class="w-full p-8">
       <div class="mb-2">พอร์ตปัจจุบัน</div>
       <div class="bg-white rounded-lg">
-        {{ currentData }}
         <apexchart
           :options="chartOptions"
           :series="currentData.series"

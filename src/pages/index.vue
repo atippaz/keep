@@ -1,6 +1,6 @@
 <template>
   <div class="inline-grid lg:grid-cols-3 gap-2 w-full font-bold">
-    <div class="w-full p-6 flex justify-between items-center">
+    <div class="w-full p-6 flex justify-between items-center lg:hidden">
       <div class="rounded-full bg-slate-400 w-[40px] h-[40px]"></div>
       <div class="relative inline-block text-left">
         <div @click="toggleDropdown" class="three_dot"></div>
