@@ -38,20 +38,20 @@
 
     <div class="w-full p-4">
       <div class="mb-2">พอร์ตปัจจุบัน</div>
-      <div class="bg-white rounded-lg">
+      <div class="bg-white rounded-lg drop-shadow-md">
         <apexchart :options="chartOptions" :series="series" />
       </div>
     </div>
     <div class="w-full px-4">
       <div class="mb-2">เงินสด</div>
-      <div class="bg-black p-8 rounded-lg text-white">
+      <div class="bg-black p-8 rounded-lg text-white drop-shadow-md">
         <div>สินค้า</div>
         <div>1000 thb</div>
       </div>
     </div>
     <div class="w-full p-4">
       <div class="mb-2">DCA List</div>
-      <div class="bg-white rounded-lg">
+      <div class="bg-white rounded-lg drop-shadow-md">
         <div v-for="i in 3" class="p-4 flex justify-between">
           <div>abbv</div>
           <div>
