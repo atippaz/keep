@@ -1,1 +1,0 @@
-import{_ as s,o as c,c as o,a as e}from"./index-CMmVIMIO.js";const t={},n={class:"inline-grid lg:grid-cols-3 gap-2 w-full font-bold"},r=e("div",{class:"w-full p-8"},"CurrencyPage",-1),a=e("div",{class:"w-full p-8"},"CurrencyPage",-1),l=[r,a];function _(d,i){return c(),o("div",n,l)}const u=s(t,[["render",_]]);export{u as default};
