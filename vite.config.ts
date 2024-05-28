@@ -8,6 +8,7 @@ export default defineConfig({
   build: {
     outDir: './docs',
   },
+  base: '/',
   plugins: [vue(), VitePWA({ registerType: 'autoUpdate' })],
   resolve: {
     alias: {
