@@ -5,7 +5,8 @@
   "private": true,
   "scripts": {
     "build": "vue-tsc --noEmit && vite build",
-
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "dev": "cross-env NODE_OPTIONS='--no-warnings' vite",
     "preview": "vite preview"
   },
